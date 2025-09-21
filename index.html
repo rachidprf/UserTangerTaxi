@@ -87,10 +87,30 @@
                 <div class="question">
                     <label>المدينة/الجماعة: <input type="text" name="ville_commune" required></label>
                 </div>
-                <div class="question">
-                    <label>مكان البحث: <input type="text" name="lieu_recherche" required></label>
+               
+			   
+			    <div class="question">
+                    <label>مكان البحث: <label class="required">
+        <select name="lieu_entretien" required >
+          <option value="">اختار...</option>
+                    <option value="Zone nouvelle gare routière">Zone nouvelle gare routière</option>
+          <option value="Stations Autasa">Stations Autasa</option>
+          <option value="Place 9 Avril"> Place 9 Avril</option>
+			<option value="Sour El Maagazin">Sour El Maagazin</option>
+          <option value="tation Villa de France">Station Villa de France</option>
+			<option value="Station vers Bahraouine (Mosquée Badr)">Station vers Bahraouine (Mosquée Badr)</option>
+          <option value="Station Riad Tetouan">Station Riad Tetouan</option>
+		            <option value="Zone Centre-ville">Zone Centre-ville</option>
+					          <option value="Station Pestana">Station Pestana </option>
+
+
+        </select>
+      </label>
                 </div>
-                <div class="question">
+                
+				
+				
+				<div class="question">
                     <label>التاريخ: <input type="date" name="date" required> الساعة: <input type="time" name="heure" required></label>
                 </div>
             </div>
