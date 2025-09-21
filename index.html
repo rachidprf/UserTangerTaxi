@@ -809,7 +809,7 @@ function validateSection(section) {
                 const possede = form.querySelector('input[name="possede_vehicule"]:checked');
                 if (possede && possede.value === 'oui') {
                     if (!isAnyChecked('type_vehicule')) {
-                        alert('من فضلك اختر نوع المركبة (طوموبيل أو موطور).');
+                        alert('من فضلك اختر نوع المركبة (طوموبيل أو موطور)(السؤال 8).');
                         submitBtn.disabled = false;
                         submitBtn.textContent = "صيفط الاستمارة";
                         return;
@@ -821,7 +821,7 @@ function validateSection(section) {
                 if (comb && comb.value === 'oui') {
                     const any = Array.from(document.querySelectorAll('#transport_types input[type="checkbox"]')).some(cb => cb.checked);
                     if (!any) {
-                        alert('من فضلك اختر على الأقل نوع واحد من أنواع النقل المدمجة.');
+                        alert('من فضلك اختر على الأقل نوع واحد من أنواع النقل المدمجة(السؤال 20).');
                         submitBtn.disabled = false;
                         submitBtn.textContent = "صيفط الاستمارة";
                         return;
@@ -860,7 +860,7 @@ function validateSection(section) {
                     if (dv && dv.value === 'plus_100') {
                         const v = form.querySelector('input[name="depense_vtc_plus_100"]').value;
                         if (!v || Number(v) < 101) {
-                            alert('من فضلك حدد مبلغ المصروف الأسبوعي على VTC (≥101).');
+                            alert('من فضلك حدد مبلغ المصروف الأسبوعي على VTC (≥101)(السؤال 33).');
                             submitBtn.disabled = false;
                             submitBtn.textContent = "صيفط الاستمارة";
                             return;
