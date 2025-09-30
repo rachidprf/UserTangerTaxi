@@ -85,7 +85,17 @@
             <div class="researcher-info">
                 <h3>قسم معبأ من طرف الباحث:</h3>
                 <div class="question">
-                    <label>المدينة/الجماعة: <input type="text" name="ville_commune" required value="TANGER"></label>
+                    <label>المدينة/الجماعة:  <label class="required">
+        <select name="ville" required >
+          <option value="">اختار...</option>
+          <option value="RABAT">RABAT</option>
+          <option value="SALE">SALE</option>
+		  <option value="TEMARA">TEMARA</option>
+          
+
+
+        </select>
+      </label></label>
                 </div>
                
 			   
@@ -93,15 +103,12 @@
                     <label>مكان البحث: <label class="required">
         <select name="lieu_entretien" required >
           <option value="">اختار...</option>
-                    <option value="Zone nouvelle gare routière">Zone nouvelle gare routière</option>
-          <option value="Stations Autasa">Stations Autasa</option>
-          <option value="Place 9 Avril"> Place 9 Avril</option>
-			<option value="Sour El Maagazin">Sour El Maagazin</option>
-          <option value="tation Villa de France">Station Villa de France</option>
-			<option value="Station vers Bahraouine (Mosquée Badr)">Station vers Bahraouine (Mosquée Badr)</option>
-          <option value="Station Riad Tetouan">Station Riad Tetouan</option>
-		            <option value="Zone Centre-ville">Zone Centre-ville</option>
-					          <option value="Station Pestana">Station Pestana </option>
+                    <option value="BAB CHELLAH">RABAT STATION BAB CHELLAH GT</option>
+          <option value="RABAT VILLE">RABAT VILLE PT VERS AGDAL</option>
+          <option value="STATION CHATEAU"> SALE STATION CHATEAU PT ET GT</option>
+			<option value="ZONE ARRIBAT CENTRE">ZONE ARRIBAT CENTRE AGDAL</option>
+          <option value="STATION MILANO">STATION MILANO TEMARA PT ET GT</option>
+			
 
 
         </select>
