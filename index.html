@@ -940,17 +940,7 @@ function validateSection(section) {
                 }
 
                 // - if amelioration_service == oui then suggestions_amelioration must not be empty
-                const improve = form.querySelector('input[name="amelioration_service"]:checked');
-                if (improve && improve.value === 'oui') {
-                    const sug = form.querySelector('input[name="suggestions_amelioration"]').value.trim();
-                    if (!sug) {
-                        alert('من فضلك اكتب اقتراحات التحسين (السؤال 30).');
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = "صيفط الاستمارة";
-                        return;
-                    }
-                }
-
+                
                 // All validations passed -> prepare formData & send
                 const formData = new FormData(form);
 
