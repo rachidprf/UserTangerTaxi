@@ -118,9 +118,10 @@
                     <label>مكان البحث: <label class="required">
         <select name="lieu_entretien" required >
           <option value="">اختار...</option>
-          <option value="Stations Lissasfa">Stations Lissasfa</option>
-          <option value="Station Hay Hassani ">Station Hay Hassani </option>
-		  <option value="Stations Abdelhadi Boutaleb">Stations Abdelhadi Boutaleb </option>
+          <option value="Station Opera">Station Opera Grand Taxi 7 USAGERS</option>
+          <option value="Gare  Casa Port ">Gare  Casa Port petit taxi 13 USAGERS </option>
+		  <option value="Gare  Oasis">Gare  Oasis petit taxi 13 USAGERS</option>
+		  <option value="Zone Morocco Mall">Zone Morocco Mall petit taxi ( 31 usagers ) </option>
 		   
 		   <option value="BAB CHELLAH">RABAT STATION BAB CHELLAH GT</option>
           <option value="RABAT VILLE">RABAT VILLE PT VERS AGDAL</option>
@@ -158,7 +159,18 @@
         <div class="section" id="section1">
             <h2>1. معلومات على المستعمل</h2>
 
-            <div class="question">
+           
+		   <div class="question">
+                <p>1. نوع الرحلة:</p>
+                <div class="options">
+                    <label><input type="radio" name="Type" value="Petit Taxi" required> طاكسي صغيرة</label>
+                    <label><input type="radio" name="Type" value="Grand Taxi"> طاكسي كبيرة</label>
+                </div>
+            </div>
+		   
+		   
+		   
+		    <div class="question">
                 <p>1. الجنس:</p>
                 <div class="options">
                     <label><input type="radio" name="genre" value="homme" required> راجل</label>
